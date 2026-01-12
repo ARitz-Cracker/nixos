@@ -25,6 +25,8 @@
 		vlc # Cross-platform media player and streaming server
 		wayland-utils # Wayland utilities
 		wl-clipboard # Command-line copy/paste utilities for Wayland
+		lshw-gui
+		dmidecode
 	];
 	# Install firefox.
 	programs.firefox.enable = true;
