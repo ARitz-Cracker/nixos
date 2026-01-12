@@ -17,6 +17,12 @@
 		../components/hardware_workarounds/framework_keyboard.nix
 		../components/hardware_workarounds/mt7925e.nix
 		../components/hardware_workarounds/qmk.nix
-	]
+	];
 	networking.hostName = "evoshift";
+	users.users.aritz = {
+		isNormalUser = true;
+		description = "Aritz Beobide-Cardinal";
+		extraGroups = [ "networkmanager" "wheel" "dialout" ];
+		packages = with pkgs; [];
+	};
 }

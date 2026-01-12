@@ -1,7 +1,8 @@
 # Make VIA work with keychron keyboards
-{ config, pkgs, ... }: {
-	pkgs.writeTextFile {
-		name = "udev-rules-framework-input";
+{ config, pkgs, ... }:
+let
+	udev-rules-framework-input = pkgs.writeTextFile {
+		name = "50-framework-inputmodule.rules";
 		text = ''
 			# Framework Laptop 16 - LED Matrix
 			SUBSYSTEMS=="usb", ATTRS{idVendor}=="32ac", ATTRS{idProduct}=="0020", MODE="0660", TAG+="uaccess"
@@ -14,4 +15,7 @@
 		'';
 		destination = "/lib/udev/rules.d/50-framework-inputmodule.rules";
 	};
+in
+{
+	services.udev.packages = [ udev-rules-framework-input ];
 }

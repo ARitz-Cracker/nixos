@@ -1,7 +1,8 @@
 # https://github.com/qmk/qmk_firmware/blob/e391793f7317ca406989cea30dcd43ebbdb1f0e8/util/udev/50-qmk.rules
-{ config, pkgs, ... }: {
-	pkgs.writeTextFile {
-		name = "udev-rules-50-qmk";
+{ config, pkgs, ... }:
+let
+	udev-rules-50-qmk = pkgs.writeTextFile {
+		name = "50-qmk.rules";
 		text = ''
 			# Atmel DFU
 			### ATmega16U2
@@ -95,4 +96,7 @@
 		'';
 		destination = "/lib/udev/rules.d/50-qmk.rules";
 	};
+in
+{
+	services.udev.packages = [ udev-rules-50-qmk ];
 }

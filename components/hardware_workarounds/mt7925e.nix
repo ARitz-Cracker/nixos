@@ -12,10 +12,10 @@
 		unitConfig.StopWhenUnneeded = "yes";
 		serviceConfig = {
 			Type = "oneshot";
-			StandardOutput = "syslog";
+			# StandardOutput = "syslog";
 			RemainAfterExit = "yes";
-			ExecStart = "modprobe -r mt7925e";
-			ExecStop = "modprobe mt7925e";
+			ExecStart = "${pkgs.kmod}/bin/modprobe -r mt7925e";
+			ExecStop = "${pkgs.kmod}/bin/modprobe mt7925e";
 		};
 	};
 }

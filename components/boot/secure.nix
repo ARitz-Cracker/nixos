@@ -25,6 +25,6 @@ in
 	};
 	environment.systemPackages = with pkgs; [
 		# Manages the keys used to sign for secure-boot
-    	sbctl
-	]
+		sbctl
+	];
 }

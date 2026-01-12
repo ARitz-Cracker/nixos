@@ -20,5 +20,5 @@
 	environment.systemPackages = with pkgs; [
 		lon
 		wget
-	]
+	];
 }
