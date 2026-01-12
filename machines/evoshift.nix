@@ -3,10 +3,8 @@
 	imports = [
 		./_common.nix
 		../components/boot/secure.nix
-		# The latest kernel seems eventually hang anything that touches the network stack for some reason.
-		# This creates the annoying scenario where wpa-supplicant and NetworkManager freeze in a way where SIGKILL
-		# doesn't save me. Maybe the mt7925e is to blame?
-		../components/kernel/lts.nix
+		# https://lore.kernel.org/all/20260102200315.290015-1-zbowling@gmail.com/T/#r010d4bf7c3d867178148254b46fa6ba2cbdef50a
+		../components/kernel/latest.nix
 		../components/avahi.nix
 		../components/desktop_devtools.nix
 		../components/desktop.nix

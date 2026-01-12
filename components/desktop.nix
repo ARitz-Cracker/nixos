@@ -3,6 +3,8 @@
 {
 	environment.systemPackages = with pkgs; [
 		eza
+		htop
+		starship
 		discord # Should I just use the flatpak version?
 		chezmoi
 		thunderbird
@@ -78,4 +80,8 @@
 		enable = true;
 	};
 	environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
+	fonts.packages = with pkgs; [
+		nerd-fonts.fira-code
+		nerd-fonts.dejavu-sans-mono
+	];
 }
