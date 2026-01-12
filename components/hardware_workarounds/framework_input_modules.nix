@@ -1,0 +1,17 @@
+# Make VIA work with keychron keyboards
+{ config, pkgs, ... }: {
+	pkgs.writeTextFile {
+		name = "udev-rules-framework-input";
+		text = ''
+			# Framework Laptop 16 - LED Matrix
+			SUBSYSTEMS=="usb", ATTRS{idVendor}=="32ac", ATTRS{idProduct}=="0020", MODE="0660", TAG+="uaccess"
+
+			# B1 Display (Experimental prototype, not a product)
+			SUBSYSTEMS=="usb", ATTRS{idVendor}=="32ac", ATTRS{idProduct}=="0021", MODE="0660", TAG+="uaccess"
+
+			# C1 Minimal Microcontroller Module (Template for DIY Module)
+			SUBSYSTEMS=="usb", ATTRS{idVendor}=="32ac", ATTRS{idProduct}=="0022", MODE="0660", TAG+="uaccess"
+		'';
+		destination = "/lib/udev/rules.d/50-framework-inputmodule.rules";
+	};
+}
