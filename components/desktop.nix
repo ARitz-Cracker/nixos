@@ -84,4 +84,7 @@
 		nerd-fonts.fira-code
 		nerd-fonts.dejavu-sans-mono
 	];
+
+	# KDE Connect
+	programs.kdeconnect.enable = true;
 }
