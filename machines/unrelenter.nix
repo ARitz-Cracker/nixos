@@ -15,6 +15,7 @@
 		../components/steam.nix
 		../components/hardware_workarounds/keychron.nix
 		../components/hardware_workarounds/qmk.nix
+		../components/wine/development.nix
 	];
 	networking.hostName = "unrelenter";
 	users.users.aritz = {

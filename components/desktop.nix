@@ -29,8 +29,6 @@
 		wl-clipboard # Command-line copy/paste utilities for Wayland
 		lshw-gui
 		dmidecode
-		wineWowPackages.unstableFull # I think this is the "development" branch of wine?
-		winetricks
 	];
 	# Install firefox.
 	programs.firefox.enable = true;
