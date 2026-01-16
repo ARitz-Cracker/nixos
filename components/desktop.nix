@@ -45,7 +45,8 @@
 
 	# Configure keymap in X11
 	services.xserver.xkb = {
-		layout = "us";
+		# I'm Canadian but I'm not learning the French-Canadian keyboard layout
+		layout = "eu";
 		variant = "";
 	};
 

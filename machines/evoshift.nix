@@ -20,7 +20,7 @@
 	users.users.aritz = {
 		isNormalUser = true;
 		description = "Aritz Beobide-Cardinal";
-		extraGroups = [ "networkmanager" "wheel" "dialout" ];
+		extraGroups = [ "networkmanager" "wheel" "dialout" "libvirtd" ];
 		packages = with pkgs; [];
 	};
 }

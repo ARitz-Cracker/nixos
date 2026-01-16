@@ -1,6 +1,6 @@
 { config, pkgs, ... }: {
 	# I'm a pragmatist (and I own nvidia hardware)
-  	nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 	networking.networkmanager.enable = true;
 
 	# Canadian, eh?
