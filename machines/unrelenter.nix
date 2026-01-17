@@ -7,10 +7,12 @@
 		../components/boot/secure.nix
 		../components/kernel/latest.nix
 		../components/avahi.nix
+		../components/desktop_auto_update.nix
 		../components/desktop_devtools.nix
 		../components/desktop.nix
 		../components/devtools.nix
 		../components/nvidia.nix
+		../components/shared_libs.nix
 		../components/spotify.nix
 		../components/steam.nix
 		../components/hardware_workarounds/keychron.nix

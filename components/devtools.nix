@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
 	environment.systemPackages = with pkgs; [
 		gitFull
-		rustup
+		nodejs_24
 	];
 	virtualisation.libvirtd = {
 		enable = true;

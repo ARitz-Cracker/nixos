@@ -10,6 +10,7 @@
 		../components/desktop_devtools.nix
 		../components/desktop.nix
 		../components/devtools.nix
+		../components/shared_libs.nix
 		../components/spotify.nix
 		../components/steam.nix
 		../components/hardware_workarounds/framework_input_modules.nix
