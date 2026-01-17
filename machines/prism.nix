@@ -15,8 +15,8 @@
 		../components/hardware_workarounds/qmk.nix
 		../components/wine/development.nix
 	];
-	networking.hostName = "snow";
-	users.users.aritz = {
+	networking.hostName = "prism";
+	users.users.snow = {
 		isNormalUser = true;
 		description = "Snow Lou";
 		extraGroups = [ "networkmanager" "wheel" "dialout" ];
