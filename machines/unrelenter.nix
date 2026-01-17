@@ -26,6 +26,9 @@
 		extraGroups = [ "networkmanager" "wheel" "dialout" "libvirtd" ];
 		packages = with pkgs; [];
 	};
+	environment.systemPackages = with pkgs; [
+		jdk
+	]
 	boot.kernelParams = [ 
 		# The Intel I225 2.5G LAN on my Asus ROG STRIX X670E-E likes to kill itself after a couple hours without
 		# these params. While that was with Debian 13, I doubt things have changed much since then.

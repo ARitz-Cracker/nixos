@@ -34,6 +34,7 @@
 		lshw-gui
 		dmidecode
 		libnotify # Sends desktop notifications to a notification daemon
+		appimage-run
 	];
 	# Install firefox.
 	programs.firefox.enable = true;
