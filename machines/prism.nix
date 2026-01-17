@@ -1,0 +1,26 @@
+# Prism
+{ config, pkgs, ... }: {
+	imports = [
+		./_common.nix
+		../components/boot/insecure.nix
+		../components/kernel/latest.nix
+		../components/avahi.nix
+		../components/desktop_auto_update.nix
+		../components/desktop.nix
+		../components/nvidia.nix
+		../components/shared_libs.nix
+		../components/spotify.nix
+		../components/steam.nix
+		../components/hardware_workarounds/keychron.nix
+		../components/hardware_workarounds/qmk.nix
+		../components/wine/development.nix
+	];
+	networking.hostName = "snow";
+	users.users.aritz = {
+		isNormalUser = true;
+		description = "Snow Lou";
+		extraGroups = [ "networkmanager" "wheel" "dialout" ];
+		packages = with pkgs; [];
+	};
+	boot.kernelParams = [];
+}
