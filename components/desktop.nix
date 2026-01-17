@@ -11,7 +11,11 @@
 		obsidian
 		chromium
 		# KDE
+		kdePackages.kdialog
+		kdePackages.khelpcenter
+		kdePackages.kfind
 		kdePackages.discover # Optional: Install if you use Flatpak or fwupd firmware update sevice
+		kdePackages.krdc
 		kdePackages.kcalc # Calculator
 		kdePackages.kcharselect # Tool to select and copy special characters from all installed fonts
 		kdePackages.kclock # Clock app
@@ -29,6 +33,7 @@
 		wl-clipboard # Command-line copy/paste utilities for Wayland
 		lshw-gui
 		dmidecode
+		libnotify # Sends desktop notifications to a notification daemon
 	];
 	# Install firefox.
 	programs.firefox.enable = true;

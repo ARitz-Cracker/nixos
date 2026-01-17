@@ -4,5 +4,6 @@
 		nodejs_24
 		zed-editor
 		virt-manager
+		pkgs.d-spy
 	];
 }
