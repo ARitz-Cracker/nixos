@@ -25,141 +25,148 @@
 		{
 			name = "0001-wifi-mt76-mt7925-fix-NULL-pointer-dereference-in-vif.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0001-wifi-mt76-mt7925-fix-NULL-pointer-dereference-in-vif.patch";
-				sha256 = "sha256-pt31pnEVmFX9t+z2s6yvLGRmnXTjPV4e/Ckq2UFS0Qg=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0001-wifi-mt76-mt7925-fix-NULL-pointer-dereference-in-vif.patch";
+				sha256 = "sha256-lYJQu9F85/LzAUCpZCdxZ9ISc2ARUZutN9hwq+rMm7M=";
 			};
 		}
 		{
 			name = "0002-wifi-mt76-mt7925-fix-missing-mutex-protection-in-res.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0002-wifi-mt76-mt7925-fix-missing-mutex-protection-in-res.patch";
-				sha256 = "sha256-2vVgxGXNt3KhJim3JsGT3mKCvOSZ0B/u2rCZcBCdJT4=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0002-wifi-mt76-mt7925-fix-missing-mutex-protection-in-res.patch";
+				sha256 = "sha256-GNCiDSx0G/t+UbTGFqUIL8xB86B6iX1IRCI3p/IiepM=";
 			};
 		}
 		{
 			name = "0003-wifi-mt76-mt7925-fix-missing-mutex-protection-in-run.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0003-wifi-mt76-mt7925-fix-missing-mutex-protection-in-run.patch";
-				sha256 = "sha256-5KNYyseZdU8Dw7Uy3KLTRxNKaYV5xWQ7poiZaRXTb+g=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0003-wifi-mt76-mt7925-fix-missing-mutex-protection-in-run.patch";
+				sha256 = "sha256-tjTxp0aRoDdkFMe0Mfgw6zKqY9MschrvZk8iy1fexbc=";
 			};
 		}
 		{
 			name = "0004-wifi-mt76-mt7925-add-NULL-checks-in-MCU-STA-TLV-func.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0004-wifi-mt76-mt7925-add-NULL-checks-in-MCU-STA-TLV-func.patch";
-				sha256 = "sha256-w6ehmbKKs25zsAQAZlQY/LTOZ1ktpFBDVhlmLd/pSek=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0004-wifi-mt76-mt7925-add-NULL-checks-in-MCU-STA-TLV-func.patch";
+				sha256 = "sha256-U1THENdRkXwjS6iAGtsmX9QbBG/7ReVIOn++QA+ZL2I=";
 			};
 		}
 		{
 			name = "0005-wifi-mt76-mt7925-add-NULL-checks-for-link_conf-and-m.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0005-wifi-mt76-mt7925-add-NULL-checks-for-link_conf-and-m.patch";
-				sha256 = "sha256-pZcXOt4eBB8Pbdm2bG9ugMyXFa3q25LrA73PZzT6hjg=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0005-wifi-mt76-mt7925-add-NULL-checks-for-link_conf-and-m.patch";
+				sha256 = "sha256-VixRyx/ekScF+PWW/GhLvd4eOFV/OtPWrFfSVfn1Ves=";
 			};
 		}
 		{
 			name = "0006-wifi-mt76-mt7925-add-error-handling-for-AMPDU-MCU-co.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0006-wifi-mt76-mt7925-add-error-handling-for-AMPDU-MCU-co.patch";
-				sha256 = "sha256-uhpKDK+wotK/kdBUsXgqHwD7Em96ycEFNAp5pZiY3ys=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0006-wifi-mt76-mt7925-add-error-handling-for-AMPDU-MCU-co.patch";
+				sha256 = "sha256-r97PHsTQgVPyFwcERRmHjMirqSBK+/OjXfHQE5dKlWk=";
 			};
 		}
 		{
 			name = "0007-wifi-mt76-mt7925-add-error-handling-for-BSS-info-MCU.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0007-wifi-mt76-mt7925-add-error-handling-for-BSS-info-MCU.patch";
-				sha256 = "sha256-NHWB5/5/nw66VWcEU9M9voj51bMp4tCg/wyYawSBVP0=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0007-wifi-mt76-mt7925-add-error-handling-for-BSS-info-MCU.patch";
+				sha256 = "sha256-/sZgXR9lpbnyY0TREi663h+lHmsQnFnWEsf+6058XBw=";
 			};
 		}
 		{
 			name = "0008-wifi-mt76-mt7925-add-error-handling-for-BSS-info-in-.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0008-wifi-mt76-mt7925-add-error-handling-for-BSS-info-in-.patch";
-				sha256 = "sha256-vgnY7KORLu0iCMzpXf1epagyrhT9InN6J3ysquBu8vw=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0008-wifi-mt76-mt7925-add-error-handling-for-BSS-info-in-.patch";
+				sha256 = "sha256-K5SnlTArc0WMqrNGs/ygGToV2AGklWN21yCsyOetTag=";
 			};
 		}
 		{
 			name = "0009-wifi-mt76-mt7925-add-NULL-checks-in-MLO-link-and-cha.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0009-wifi-mt76-mt7925-add-NULL-checks-in-MLO-link-and-cha.patch";
-				sha256 = "sha256-s9IeHIf+B9adtKi5vdSqTxdGuCioUUrWgtljba8g+Tw=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0009-wifi-mt76-mt7925-add-NULL-checks-in-MLO-link-and-cha.patch";
+				sha256 = "sha256-pWtXse/x1tMWtoQxXFmlGcm0gbLNF3tEiO4sh9EZxPE=";
 			};
 		}
 		{
 			name = "0010-wifi-mt76-mt792x-fix-NULL-pointer-dereference-in-TX-.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0010-wifi-mt76-mt792x-fix-NULL-pointer-dereference-in-TX-.patch";
-				sha256 = "sha256-FGtwWnbZ5UuW6RrnFW/tSWixHrYSS1EaVK+Jr6jFVps=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0010-wifi-mt76-mt792x-fix-NULL-pointer-dereference-in-TX-.patch";
+				sha256 = "sha256-GjlYX6YCNFqLIH+Gk867XceU9AtkEwEJABSn893veQI=";
 			};
 		}
 		{
 			name = "0011-wifi-mt76-mt7925-add-lockdep-assertions-for-mutex-ve.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0011-wifi-mt76-mt7925-add-lockdep-assertions-for-mutex-ve.patch";
-				sha256 = "sha256-/DZKIO5cRt7UszIJ1ZBVBhoDA2o6GjQJDyEJwj7Wwms=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0011-wifi-mt76-mt7925-add-lockdep-assertions-for-mutex-ve.patch";
+				sha256 = "sha256-mB6Erev1080sJAItseREZ2RKKXxmyWqygdez6oez4LQ=";
 			};
 		}
 		{
 			name = "0012-wifi-mt76-mt7925-fix-key-removal-failure-during-MLO-.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0012-wifi-mt76-mt7925-fix-key-removal-failure-during-MLO-.patch";
-				sha256 = "sha256-spITepXYEl/BadLf36Z9dJfEXsMFYtaGbkaa23G2KOg=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0012-wifi-mt76-mt7925-fix-key-removal-failure-during-MLO-.patch";
+				sha256 = "sha256-YRiVwDLdi1nPvPkraY5bUe4OIqqtiXWHRwl0l93S4vE=";
 			};
 		}
 		{
 			name = "0013-wifi-mt76-mt7925-fix-kernel-warning-in-MLO-ROC-setup.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0013-wifi-mt76-mt7925-fix-kernel-warning-in-MLO-ROC-setup.patch";
-				sha256 = "sha256-jW01RA93HWttH5IXkVgh2ZZt6+nVNzslI2WqGttYzWE=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0013-wifi-mt76-mt7925-fix-kernel-warning-in-MLO-ROC-setup.patch";
+				sha256 = "sha256-8QtArn25JfNALUiy1wngL8wTGUq91uW66aozoVu2hmE=";
 			};
 		}
 		{
 			name = "0014-wifi-mt76-mt7925-add-NULL-checks-for-MLO-link-pointe.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0014-wifi-mt76-mt7925-add-NULL-checks-for-MLO-link-pointe.patch";
-				sha256 = "sha256-U3RCCHBRiIhwLp/aeOBE1BWQ0PGhW1vKVQ4CHigRhco=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0014-wifi-mt76-mt7925-add-NULL-checks-for-MLO-link-pointe.patch";
+				sha256 = "sha256-Ho0Sm1HoMHAkkY+ocTaGhvbk2aMEHahsp5ABa0DDQ8k=";
 			};
 		}
 		{
 			name = "0015-wifi-mt76-mt792x-fix-firmware-reload-failure-after-p.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0015-wifi-mt76-mt792x-fix-firmware-reload-failure-after-p.patch";
-				sha256 = "sha256-g6JUoOxWj+CrP93jovfnAPLScnEB/wuFi69D2dPpaeE=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0015-wifi-mt76-mt792x-fix-firmware-reload-failure-after-p.patch";
+				sha256 = "sha256-20fBhc3Qs2sNSV7G8T5tHdb8FSXhUqpGI4RBAwhwIaA=";
 			};
 		}
 		{
 			name = "0016-wifi-mt76-mt7925-add-mutex-protection-in-resume-path.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0016-wifi-mt76-mt7925-add-mutex-protection-in-resume-path.patch";
-				sha256 = "sha256-Gc80l2cX62oSY1nfZFkBqnVjBiJUKuWl9wnrQRaURzA=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0016-wifi-mt76-mt7925-add-mutex-protection-in-resume-path.patch";
+				sha256 = "sha256-vIWu8/ye+W5HVEJRpnedGm4KNPATHji6k+DivnEEkI4=";
 			};
 		}
 		{
 			name = "0017-wifi-mt76-mt7925-add-NULL-checks-for-link-pointers-i.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0017-wifi-mt76-mt7925-add-NULL-checks-for-link-pointers-i.patch";
-				sha256 = "sha256-OjqLqX8bUtUTN5/yCExXcj6suRRdphPP20dexrK3VYM=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0017-wifi-mt76-mt7925-add-NULL-checks-for-link-pointers-i.patch";
+				sha256 = "sha256-FnsuL8Ij03+U7RRInHQGJ56j+wXf0y16y+682I2kyqs=";
 			};
 		}
 		{
 			name = "0018-wifi-mt76-mt7921-fix-mutex-handling-in-multiple-path.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0018-wifi-mt76-mt7921-fix-mutex-handling-in-multiple-path.patch";
-				sha256 = "sha256-FLfTMNMS3MHgwh3aqADXlD4ZHvDJiUEt7UjJYTf8DTU=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0018-wifi-mt76-mt7921-fix-mutex-handling-in-multiple-path.patch";
+				sha256 = "sha256-Zdht5Tv68eJVVDrz/yFGU1vcCZV4CflEWoEKFsD4o58=";
 			};
 		}
 		{
 			name = "0019-wifi-mt76-fix-list-corruption-in-mt76_wcid_cleanup.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0019-wifi-mt76-fix-list-corruption-in-mt76_wcid_cleanup.patch";
-				sha256 = "sha256-cvpWqSZf1Fi6xmrrxvSD4rFPNDI3bAGb10TIGP7M+p4=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0019-wifi-mt76-fix-list-corruption-in-mt76_wcid_cleanup.patch";
+				sha256 = "sha256-Fdfx+Agl7PdwvC5qUJPd64mHlWCV7Lrkah2ZFwEzeMg=";
 			};
 		}
 		{
 			name = "0020-wifi-mt76-mt7925-fix-BA-session-teardown-during-beac.patch";
 			patch = pkgs.fetchurl {
-				url = "https://raw.githubusercontent.com/zbowling/mt7925/83d28091df2c5e48d3e4179715cb46f2310dc5e8/kernels/6.18/0020-wifi-mt76-mt7925-fix-BA-session-teardown-during-beac.patch";
-				sha256 = "sha256-MUJ4vVjYRFI9lF7QRqaVCcnmYcEhsLAt4wrAs/Guuk8=";
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0020-wifi-mt76-mt7925-fix-BA-session-teardown-during-beac.patch";
+				sha256 = "sha256-Aj53UBe2ZMJnminipn5vRzvFv7963VHgSfL+44tJuRM=";
+			};
+		}
+		{
+			name = "0021-wifi-mt76-mt7925-fix-deadlock-in-sta-removal-ROC-abo.patch";
+			patch = pkgs.fetchurl {
+				url = "https://raw.githubusercontent.com/zbowling/mt7925/c2fa57c1415d4091f3a0720656ed6d4bce43d677/kernels/6.18/0021-wifi-mt76-mt7925-fix-deadlock-in-sta-removal-ROC-abo.patch";
+				sha256 = "sha256-q7cImyYrPwoDLeNKF6+ZRHDGw3p5unCvAnESPwYAtRo=";
 			};
 		}
 	];
