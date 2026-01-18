@@ -3,8 +3,8 @@
 {
 	hardware.nvidia = {
 		# nvidia seems to reccommend prod or beta for 20-series and 40-series.
-		package = config.boot.kernelPackages.nvidiaPackages.production;
-		# package = config.boot.kernelPackages.nvidiaPackages.beta;
+		# package = config.boot.kernelPackages.nvidiaPackages.production;
+		package = config.boot.kernelPackages.nvidiaPackages.beta;
 
 		# Modesetting is required.
 		modesetting.enable = true;
