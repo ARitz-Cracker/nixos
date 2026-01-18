@@ -29,7 +29,6 @@
 	environment.systemPackages = with pkgs; [
 		jdk
 		go # need this to isntall packwiz
-		gcc_multi
 		s3fs
 	];
         networking.firewall.allowedTCPPorts = [ 25565 ];

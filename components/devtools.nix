@@ -1,5 +1,6 @@
 { config, pkgs, ... }: {
 	environment.systemPackages = with pkgs; [
+		gcc_multi
 		gitFull
 		nodejs_24
 	];
