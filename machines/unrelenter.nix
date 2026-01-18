@@ -28,7 +28,12 @@
 	};
 	environment.systemPackages = with pkgs; [
 		jdk
-	]
+		go # need this to isntall packwiz
+		gcc_multi
+		s3fs
+	];
+        networking.firewall.allowedTCPPorts = [ 25565 ];
+        networking.firewall.allowedUDPPorts = [ 25565 ];
 	boot.kernelParams = [ 
 		# The Intel I225 2.5G LAN on my Asus ROG STRIX X670E-E likes to kill itself after a couple hours without
 		# these params. While that was with Debian 13, I doubt things have changed much since then.
