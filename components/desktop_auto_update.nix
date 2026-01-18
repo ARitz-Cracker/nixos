@@ -33,6 +33,7 @@
 			kdePackages.kdialog # self-explanatory
 			kdePackages.qttools # qdbus
 			nix
+			nixos-rebuild
 		];
 		script = ''
 #!/bin/sh
@@ -88,7 +89,7 @@ if [ "$current_system" = "$default_system" ]; then
 				"--action=restart=Restart" \
 				"--action=ignore=Dismiss" \
 				--urgency=critical \
-				--icon=system-restart-update
+				--icon=system-reboot-update
 		);
 	fi
 	echo "No updates pending."
