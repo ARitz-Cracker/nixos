@@ -1,6 +1,7 @@
 # Unrelenter, est. 2023.
 # - R9 7950X3D
 # - 64 GiB of RAM
+# - RTX 4090
 { config, pkgs, ... }: {
 	imports = [
 		./_common.nix
@@ -31,9 +32,9 @@
 		go # need this to isntall packwiz
 		s3fs
 	];
-        networking.firewall.allowedTCPPorts = [ 25565 ];
-        networking.firewall.allowedUDPPorts = [ 25565 ];
-	boot.kernelParams = [ 
+	networking.firewall.allowedTCPPorts = [ 25565 ];
+	networking.firewall.allowedUDPPorts = [ 25565 ];
+	boot.kernelParams = [
 		# The Intel I225 2.5G LAN on my Asus ROG STRIX X670E-E likes to kill itself after a couple hours without
 		# these params. While that was with Debian 13, I doubt things have changed much since then.
 		"pcie_port_pm=off"

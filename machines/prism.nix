@@ -1,4 +1,7 @@
-# Prism
+# Prism, est. 2018?
+# - Some Zen1 or Zen2 CPU, no TPM
+# - 16GB of RAM
+# - RTX 2060Super
 { config, pkgs, ... }: {
 	imports = [
 		./_common.nix
