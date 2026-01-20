@@ -27,6 +27,8 @@
 			Type = "simple";
 		};
 		path = with pkgs; [
+			# Apparently that has pkexec in there with the proper setuid bits
+			"/run/wrappers/bin"
 			coreutils # readlink
 			libnotify # notify-send
 			polkit # pkexec
@@ -96,7 +98,7 @@ if [ "$current_system" = "$default_system" ]; then
 	exit 0;
 fi;
 echo "Getting changes..."
-changes="$(nix store diff-closures /run/current-system /nix/var/nix/profiles/system --extra-experimental-features nix-command)";
+changes="$(nix store diff-closures /run/current-system /nix/var/nix/profiles/system --extra-experimental-features nix-command | sed -r "s/\x1B\[([0-9]{1,3}(;[0-9]{1,2};?)?)?[mGK]//g")";
 echo "Got changes..."
 update_msg="The following updates are available for your system:
 ---
