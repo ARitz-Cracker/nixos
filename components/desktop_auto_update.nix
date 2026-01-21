@@ -7,6 +7,10 @@
 		operation = "boot";
 		allowReboot = false;
 	};
+	# Make system.autoUpgrade extremely nice so it doesn't interfere with user processes
+	# No idea why this isn't default behavior, it should be! Don't be in the way of users!
+	systemd.services.nixos-upgrade.serviceConfig.Nice = "18";
+
 	# Ideally this wouldn't be on a timer, but I'm not sure how to make a user service that triggers when a system
 	# serice completes. Ideally we'd start this when the nixos-upgrade.service finishes.
 	systemd.user.timers.nixos-upgrade-notifier = {
