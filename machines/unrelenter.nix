@@ -34,10 +34,15 @@
 	];
 	networking.firewall.allowedTCPPorts = [ 25565 ];
 	networking.firewall.allowedUDPPorts = [ 25565 ];
-	boot.kernelParams = [
+	boot.kernelParams = [ 
 		# The Intel I225 2.5G LAN on my Asus ROG STRIX X670E-E likes to kill itself after a couple hours without
 		# these params. While that was with Debian 13, I doubt things have changed much since then.
 		"pcie_port_pm=off"
 		"pcie_aspm.policy=performance"
 	];
+	hardware.i2c.enable = true;
+	swapDevices = [{
+		device = "/var/lib/swapfile";
+		size = 72 * 1024; # 72 GB
+	}];
 }
