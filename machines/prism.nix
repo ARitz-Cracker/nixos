@@ -8,7 +8,7 @@
 		../components/boot/insecure.nix
 		../components/kernel/latest.nix
 		../components/avahi.nix
-		../components/desktop_auto_update.nix
+		# ../components/desktop_auto_update.nix # Put this back when I finally fix it
 		../components/desktop.nix
 		../components/nvidia.nix
 		../components/shared_libs.nix

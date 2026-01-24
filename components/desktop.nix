@@ -5,7 +5,6 @@
 		eza
 		htop
 		starship
-		discord # Should I just use the flatpak version?
 		chezmoi
 		thunderbird
 		obsidian

@@ -25,4 +25,8 @@
 		extraGroups = [ "networkmanager" "wheel" "dialout" "libvirtd" ];
 		packages = with pkgs; [];
 	};
+	environment.systemPackages = with pkgs; [
+		s3fs
+		discord
+	];
 }

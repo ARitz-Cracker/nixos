@@ -31,6 +31,9 @@
 	# Enable OpenGL
 	hardware.graphics = {
 		enable = true;
+		extraPackages = with pkgs; [
+			libvdpau-va-gl # Needed for hw accelerated video, e.g. steam play together
+		];
 	};
 	# Load nvidia driver for Xorg and Wayland
 	services.xserver.videoDrivers = ["nvidia"];

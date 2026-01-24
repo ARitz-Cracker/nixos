@@ -31,6 +31,7 @@
 		jdk
 		go # need this to isntall packwiz
 		s3fs
+		discord
 	];
 	networking.firewall.allowedTCPPorts = [ 25565 ];
 	networking.firewall.allowedUDPPorts = [ 25565 ];
