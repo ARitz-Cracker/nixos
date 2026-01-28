@@ -29,4 +29,15 @@
 		s3fs
 		discord
 	];
+	swapDevices = [{
+		device = "/var/lib/swapfile";
+		size = 72 * 1024; # 72 GB
+	}];
+	# Enable hibernation
+	boot.kernelParams = [
+		# location of /var/lib/swapfile
+		"resume_offset=282624"
+	];
+	boot.resumeDevice = "/dev/disk/by-uuid/85d4b4c8-9f75-4b3d-bb53-2a22aaa295f3";
+	powerManagement.enable = true;
 }
